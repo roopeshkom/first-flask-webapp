@@ -1,19 +1,16 @@
 <html>
 	<head>
-		<p>My app</p>
-		<link rel="stylesheet" href="{{ url_for('static', filename='styles.css') }}">
+		<title>Testing</title>
+		<link rel="stylesheet" href={{ url_for('static', filename='styles.css') }}>
 	</head>
 	<body>
-		<ul>
-			<p>Let's try to see if I can set up a sorted list using jinga2's loops</p>
+		<h1>My App</h1>
+		<p>Let's try to see if I can set up a sorted list using jinga2's loops</p>
+		<ol>
 			{% for i in lis %}
-			<li>1. {{ i }}</li>
+			<li>&nbsp;{{ i }}</li>
 			{% endfor %}
-			<!-- <li>1. I made it</li>
-			<li>2. I made it</li>
-			<li>3. Making it was fun</li>
-			<li>4. I learned how to make webapps using flask! :D</li> -->
-		</ul>
+		</ol>
 		<a href={{ url }}> Click me</a>
 	</body>
 </html>
