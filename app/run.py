@@ -11,6 +11,8 @@ app = Flask(__name__)
 @app.route('/')
 @app.route("/index")
 def hello():
-	return render_template("index.html", url = "https://www.facebook.com")
+	lis = [1,1241,4,453,-45, 45,2,23]
+	lis = sorted(lis, reverse = True)
+	return render_template("index.html", lis = lis, url = "https://www.facebook.com")
 
 app.run(debug = True)

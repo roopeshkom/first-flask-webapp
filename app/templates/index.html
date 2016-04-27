@@ -5,11 +5,14 @@
 	</head>
 	<body>
 		<ul>
-			<p>Why I love this app</p>
-			<li>1. I made it</li>
+			<p>Let's try to see if I can set up a sorted list using jinga2's loops</p>
+			{% for i in lis %}
+			<li>1. {{ i }}</li>
+			{% endfor %}
+			<!-- <li>1. I made it</li>
 			<li>2. I made it</li>
 			<li>3. Making it was fun</li>
-			<li>4. I learned how to make webapps using flask! :D</li>
+			<li>4. I learned how to make webapps using flask! :D</li> -->
 		</ul>
 		<a href={{ url }}> Click me</a>
 	</body>
