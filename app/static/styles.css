@@ -3,22 +3,18 @@ body
 	background-color: black;
 }
 
-h1
+.white
 {
 	color: white;
 }
 
-ol
+#yellow
 {
-	color: white;
-}
-
-p
-{
-	color: white;
+	color:yellow;
 }
 
 a
 {
-	color: red;
+	color:red;
 }
+
