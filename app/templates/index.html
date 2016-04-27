@@ -1,11 +1,11 @@
 {% extends "base.html" %}
 {% block content %}
-<h1 class="white">My App</h1>
-<p class="white">Let's try to see if I can set up a sorted list using jinga2's loops</p>
-<ol>
-	{% for i in lis %}
-	<li class="white">&nbsp;{{ i }}</li>
-	{% endfor %}
-</ol>
-<a id="yellow" href="facebook.com"> random link to facebook</a>
+	<h1 class="white">My App</h1>
+	<p class="white">Let's try to see if I can set up a sorted list using jinga2's loops</p>
+	<ol>
+		{% for i in lis %}
+		<li class="white">&nbsp;{{ i }}</li>
+		{% endfor %}
+	</ol>
+	<a id="yellow" href="facebook.com"> random link to facebook</a>
 {% endblock %}
