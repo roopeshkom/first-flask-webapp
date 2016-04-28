@@ -3,13 +3,24 @@ from flask import render_template
 # from bs4 import BeautifulSoup
 # import urllib2
 
+class pairs(object):
+	def __init__(self):
+		self.list = []
+
+	def add(self, a, b):
+		self.list.append((a, b))
+
 app = Flask(__name__)
 
 @app.route('/')
 @app.route('/index')
 def hello():
-	lis = [1,1241,4,453,-45, 45,2,23]
-	return render_template("index.html", lis = sorted(lis, reverse=True))
+	lis = pairs()
+	lis.add(123, "apples")
+	lis.add(-33, "boyo")
+	lis.add(2, "ginga")
+
+	return render_template("index.html", lis = sorted(lis.list, key=lambda x:x[1]))
 
 @app.route('/cool-stuff')
 @app.route('/about-me')
